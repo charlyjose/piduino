@@ -46,16 +46,16 @@ This works most of the time. Still not getting video output? Try altering anythi
 		1.3.1 $ nano /etc/wpa_suplicant/wpa_suplicant.conf
 		1.3.2. Append this in this file:
 						
-						network={
-							ssid="SSID HERE"
-							#psk="CLEAN TEXT PASSPHRASE HERE"
-							# UNCOMMENT ANYONE
-							psk=6ca015ac306ffe82a5f874ee307f10685bf83ae4f908321ad1defcfeeaa26015
-						}
-				
-						Generating WPA PSK
-							$ wpa_passphrase <ssid> [passphrase]
-							Append the generated configuration to the above file
+			network={
+				ssid="SSID HERE"
+				#psk="CLEAN TEXT PASSPHRASE HERE"
+				# UNCOMMENT ANYONE
+				psk=6ca015ac306ffe82a5f874ee307f10685bf83ae4f908321ad1defcfeeaa26015
+			}
+
+			Generating WPA PSK
+				$ wpa_passphrase <ssid> [passphrase]
+				Append the generated configuration to the above file
 	
 	1.4. method 2:
 		1.4.1. $ wpa_passphrase <ssid> >> /etc/wpa_suplicant/wpa_suplicant.conf
