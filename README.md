@@ -12,8 +12,8 @@ This works most of the time. Still not getting video output? Try altering anythi
 
 Getting around things
 ---------------------
-gpio -v
-gpio readall
+$ gpio -v
+$ gpio readall
 
 
 Setup the environment for arduino-Pi communocation
