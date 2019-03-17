@@ -4,11 +4,12 @@ Arduino Raspberry Pi hacks
 
 ## Raspberry Pi not connecting to moniter?
 -----------------------------------------
+```bash
 1. Put the your burned SD card to an android mobile/computer
 2. Open /boot/config.txt in write mode
-3. Uncomment: hdmi_force_hotplug=1
+3. Uncomment: `hdmi_force_hotplug=1`
 This works most of the time. Still not getting video output? Try altering anything containing `*hdmi*` (at your own risk)
-
+```
 
 ## Enable remote communication
 ------------------------------
@@ -25,8 +26,8 @@ This works most of the time. Still not getting video output? Try altering anythi
 
 2. Graphical method
 	2.1. Click on the raspberry at the top-left corner of your screen
-	2.2. Click "Preferences"
-	2.3. Click "Raspberry Pi Configuration"
+	2.2. Click `Preferences`
+	2.3. Click `Raspberry Pi Configuration`
 	2.4. Enable IC2 and Serial
 	2.5. Also enable SSH and VNC (it comes handy at times)
 	2.6. Reboot the system
@@ -45,7 +46,7 @@ This works most of the time. Still not getting video output? Try altering anythi
 	1.3. method 1:
 		1.3.1 $ nano /etc/wpa_suplicant/wpa_suplicant.conf
 		1.3.2. Append this in this file:
-						
+
 			network={
 				ssid="SSID HERE"
 				#psk="CLEAN TEXT PASSPHRASE HERE"
@@ -56,10 +57,10 @@ This works most of the time. Still not getting video output? Try altering anythi
 			Generating WPA PSK
 				$ wpa_passphrase <ssid> [passphrase]
 				Append the generated configuration to the above file
-	
+
 	1.4. method 2:
 		1.4.1. $ wpa_passphrase <ssid> >> /etc/wpa_suplicant/wpa_suplicant.conf
-	
+
 	1.5.  $ sudo rfkill unblock wifi
 ```
 
@@ -99,8 +100,8 @@ This works most of the time. Still not getting video output? Try altering anythi
 ### 2. Graphical method
 ```bash
 	2.1. Click on the raspberry at the top-left corner of your screen
-	2.2. Click "Preferences"
-	2.3. Click "Raspberry Pi Configuration"
+	2.2. Click `Preferences`
+	2.3. Click `Raspberry Pi Configuration`
 	2.4. Enable IC2 and Serial
 	2.5. Also enable SSH and VNC (it comes handy at times)
 	2.6. Reboot the system
